@@ -2,7 +2,8 @@ import matplotlib.pyplot as plt
 
 
 def create_visualizations(product_sales, monthly_sales):
-    plt.style.use('seaborn')
+    # Използваме 'ggplot' стил вместо 'seaborn', тъй като той е вграден в matplotlib
+    plt.style.use('ggplot')
 
     # Графика на продажбите по продукт
     plt.figure(figsize=(10, 6))
